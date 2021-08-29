@@ -5,28 +5,28 @@ main() {
 }
 
 calculoImc() {
-  // print("Digite seu peso: ");
+  print("Digite seu peso: ");
 
-  // String? textPeso = stdin.readLineSync();
-  // int peso;
+  String? textPeso = stdin.readLineSync();
+  int peso;
 
-  // if (textPeso != null) {
-  //   peso = int.parse(textPeso);
-  // }
+  if (textPeso != null) {
+    peso = int.parse(textPeso);
 
-  // print("Digite sua altura: ");
+    print("Digite sua altura: ");
 
-  // String? textAltura = stdin.readLineSync();
-  // double altura;
+    String? textAltura = stdin.readLineSync();
+    double altura;
 
-  // if (textAltura != null) {
-  //   altura = double.parse(textAltura);
-  // }
+    if (textAltura != null) {
+      altura = double.parse(textAltura);
 
-  double imc = calcImc(78, 1.90);
+      double imc = calcImc(peso, altura);
 
-  print(imc);
-  imprimirResultado(imc);
+      print(imc);
+      imprimirResultado(imc);
+    }
+  }
 }
 
 double calcImc(int peso, double altura) {

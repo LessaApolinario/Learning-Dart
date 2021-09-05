@@ -22,7 +22,12 @@ main() {
   //   print("\n");
   // }
 
-  List<String> nomes = ["João da Silva", "José dos Santos", "Maria Luiza", "Jordana de Almeida"];
+  List<String> nomes = [
+    "João da Silva",
+    "José dos Santos",
+    "Maria Luiza",
+    "Jordana de Almeida"
+  ];
 
   nomes.add("Eurides Moura"); // adiciona no final do array
   nomes.add("André Barros");
@@ -31,7 +36,8 @@ main() {
   // print(nomes[3]);
   print(nomes);
 
-  nomes.remove("Maria Luiza"); // o método remove elimina um elemento de um array
+  nomes
+      .remove("Maria Luiza"); // o método remove elimina um elemento de um array
   nomes.removeAt(4); // remove de acordo com a posição do array
   // nomes.remove(nomes[4]);
 

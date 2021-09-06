@@ -43,5 +43,5 @@ void cadastrar(List<Map<String, dynamic>> cadastros) {
   print("Digite o seu estado: ");
   cadastro["estado"] = stdin.readLineSync();
 
-  cadastros.add(cadastro); // adicionando aqo array de maps
+  cadastros.add(cadastro); // adicionando ao array de maps
 }

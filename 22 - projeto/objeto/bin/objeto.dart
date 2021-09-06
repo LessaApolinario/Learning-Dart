@@ -1,11 +1,10 @@
-import 'package:objeto/src/pessoa.dart';
+import 'package:objeto/src/cachorro.dart';
+import 'package:objeto/src/gato.dart';
 
 void main(List<String> arguments) {
-  Pessoa pessoa = Pessoa(nome: "João", idade: 29, sexo: "M");
+  Gato gato = Gato(nome: "George", barulho: "Miau");
+  Cachorro cachorro = Cachorro(nome: "Alberto", barulho: "Au");
 
-  print(pessoa.nome);
-  print(pessoa.idade);
-  print(pessoa.sexo);
-  print(pessoa.peso);
-  print(pessoa.altura);
+  print("O gato ${gato.nome} faz ${gato.barulho}");
+  print("O cachorro ${cachorro.nome} faz ${cachorro.barulho}");
 }
